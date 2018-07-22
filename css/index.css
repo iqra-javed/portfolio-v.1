@@ -84,7 +84,14 @@
 }
 
 .education {
+    background: linear-gradient(rgb(73, 70, 70), lightgray);
+    padding-top: 50px;
+    height: 400px;
+}
+
+.education-cards {
     margin: 0 auto;
+    height: 200px;
     display: flex;
     justify-content: space-between;
     padding: 50px 40px;
@@ -99,7 +106,7 @@
 .edu-info {
     width: 40%;
     height: 150%;
-    border: 6px solid rgb(219, 223, 33);
+    border: 6px solid rgb(174, 177, 9);
     padding: 20px 50px 0px;
     background-color: lightgrey;
 }
