@@ -10,7 +10,6 @@
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link href="css/index.css" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
-
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
   <![endif]-->
@@ -49,7 +48,7 @@
                 </div>
             </div>
        </div>
-       <row class="row education">
+       <div class="row education">
             <div class="col-8 education-cards">
                 <div class="edu-info">
                     <i class="edu-bullets fas fa-graduation-cap"></i>
@@ -62,11 +61,38 @@
                     <p class="degree"> Web Development Certificate</p>
                 </div>
             </div>
-       </row>
+        </div>
+        <div class="row top-charts">
+            <div class="col-3">
+                <canvas id="myChart1" width="10" height="6"></canvas>
+            </div>
+            <div class="col-3">
+                <canvas id="myChart2" width="10" height="6"></canvas>
+            </div>
+            <div class="col-3">
+                <canvas id="myChart3" width="10" height="6"></canvas>
+            </div>
+        </div>
+        <div class="row bottom-charts">
+            <div class="col-3">
+                <canvas id="myChart4" width="10" height="6"></canvas>
+            </div>
+            <div class="col-3">
+                <canvas id="myChart5" width="10" height="6"></canvas>
+            </div>
+            <div class="col-3">
+                <canvas id="myChart6" width="10" height="6"></canvas>
+            </div>
+        </div>
     </div><!-- container -->
 
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/index.js"></script>
+
+
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/Chart.js"></script>    
+    <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+
+    
 </body>
 </html>
