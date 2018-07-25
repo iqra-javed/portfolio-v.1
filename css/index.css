@@ -132,4 +132,24 @@
     justify-content: center;
 }
 
+.skills {
+    margin-left: 6rem;
+}
+
+.skills-icons-top {
+  margin-top: 5rem;
+  margin-left: 2rem;
+  justify-content: space-around;
+}
+
+.skills-icons-bottom {
+    justify-content: space-around;
+    margin-left: 16rem;
+    margin-top: 2rem;
+}
+
+.sk-icon {
+    width: 16%;
+    height: 70%;
+}
 
