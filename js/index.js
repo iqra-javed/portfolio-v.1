@@ -9,7 +9,13 @@ function chartFactory(argsArr) {
   
       var data = {
   
-        datasets: argsArr[i][0]
+        datasets: [
+          {
+            data: [argsArr[i][0][0], argsArr[i][0][1]],
+            backgroundColor: [
+              "#5E4980"
+            ]
+          }]
       };
       
         Chart.pluginService.register({
@@ -23,11 +29,10 @@ function chartFactory(argsArr) {
             ctx.font = fontSize + "em sans-serif";
             ctx.textBaseline = "middle";
 
-            var text = argsArr[i][1][0]
-            console.log(text)
+            var text = argsArr[i][1]
                 textX = Math.round((width - ctx.measureText(text).width) / 2),
                 textY = height / 2;
-        if(chart.canvas.id == argsArr[i][3].chartID) { // this prevents one inner text from being printed in all charts
+        if(chart.canvas.id == argsArr[i][3]) { // this prevents one inner text from being printed in all other charts too
           ctx.fillText(text, textX, textY);
         }
             ctx.save();
@@ -35,7 +40,7 @@ function chartFactory(argsArr) {
         
         });
       
-      var chart = new Chart(document.getElementById(argsArr[i][3].chartID), {
+      var chart = new Chart(document.getElementById(argsArr[i][3]), {
         type: 'doughnut',
         data: data,
         options: {
@@ -57,55 +62,15 @@ function chartFactory(argsArr) {
   }
   }
 
-chartFactory([[
-  [
-    {
-      data: [95, 5],
-      backgroundColor: [
-        "#34364F"
-      ]
-    }], ["95%"], ["HTML5"], {chartID: "myChart1"}
-], [
-  [
-    {
-      data: [95, 5],
-      backgroundColor: [
-        "#34364F"
-      ]
-    }], ["95%"], ["CSS3"], {chartID: "myChart2"}
-], [
-  [
-    {
-      data: [80, 20],
-      backgroundColor: [
-        "#34364F"
-      ]
-    }], ["80%"], ["Javascript"], {chartID: "myChart3"}
-], [
-  [
-    {
-      data: [75, 25],
-      backgroundColor: [
-        "#34364F"
-      ]
-    }], ["75%"], ["React"], {chartID: "myChart4"}
-], [
-  [
-    {
-      data: [65, 35],
-      backgroundColor: [
-        "#34364F"
-      ]
-    }], ["65%"], ["Node.js"], {chartID: "myChart5"}
-], [
-  [
-    {
-      data: [65, 35],
-      backgroundColor: [
-        "#34364F"
-      ]
-    }], ["65%"], ["MongoDB"], {chartID: "myChart6"}
-]]);
+chartFactory([
+// shade%     %     title    chart ID
+  [[95, 5], "95%", "HTML5", "htmlChart"], 
+  [[95, 5], "95%", "CSS3", "cssChart"], 
+  [[80, 20], "80%", "Javascript", "jsChart"], 
+  [[75, 25], "75%", "React", "reactChart"], 
+  [[65, 35], "65%", "Node.js", "nodeChart"], 
+  [[65, 35], "65%", "MongoDB", "mongoChart"]
+]);
 
 
 //***************************************** 
