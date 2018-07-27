@@ -6,15 +6,13 @@
   background-image: url("../assets/pexels-photo-238783.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
 }
 
 .side-bar{
     background-color: black;
-    opacity: 0.50;
+    opacity: 0.35;
     max-width: 120px;
-    height: 100%;
-   
+    height: 100vh;
 }
 
 .logo {
@@ -28,10 +26,10 @@
 
 .nav {
     flex-direction: column;
-    padding-top: 50px;
-    height: 500px;
+    padding-top: 0px;
+    height: 400px;
     justify-content: space-evenly;
-    align-items: center;
+    align-items: center; 
 }
 
 .nav-icon {
@@ -39,35 +37,37 @@
     font-size: 2.5rem;
 }
 
+.nav-icon:hover {
+    color: #747070;
+}
+
 .profile-img {
     display: inline-block;
-    width: 13%;
+    width: 15%;
     height: auto;
-    border-radius: 50%;
-    margin: 50px;
-    margin-right: 0px;
-    /* border-right: 8px solid #34364F; */
+    border-radius: 70%;
+    margin: 60px 50px 40px 70px;
 }
 
 .about-me {
     color: #ffffff;
     letter-spacing: 1.3rem;
-    font-size: 2rem;
+    font-size: 1.8rem;
     margin: 0rem 0rem 2rem 7.4rem;
 }
 
 .about-me-title {
     color: #ffffff;
-    font-size: 7rem;
+    font-size: 4rem;
     font-weight: bold;
     margin-left: 70px;
 }
 
 .about-me-content {
     color: #ffffff;
-    margin: 4rem 0rem 2rem 7.3rem;
+    margin: 3rem 0rem 2rem 7.3rem;
     width: 50%;
-    font-size: 2.2rem;
+    font-size: 2rem;
 }
 
 .social-icons {
