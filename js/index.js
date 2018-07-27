@@ -47,6 +47,7 @@ function chartFactory(argsArr) {
           responsive: true,
           cutoutPercentage: 75,
           title: {
+            fontSize: 20,
             display: true,
             position: 'top',
             text: argsArr[i][2]
