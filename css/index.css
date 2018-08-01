@@ -6,6 +6,7 @@
   background-image: url("../assets/pexels-photo-238783.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
+  height: 100vh;
 }
 
 .side-bar{
@@ -46,7 +47,7 @@
     width: 15%;
     height: auto;
     border-radius: 70%;
-    margin: 60px 50px 40px 70px;
+    margin: 30px 50px 40px 70px;
 }
 
 .about-me {
@@ -108,7 +109,7 @@
 
 .gray-box {
     height: 280px;
-    background-color: rgb(235, 230, 222);
+    background-color: rgb(241, 236, 227);
 }
 
 .js {
@@ -133,4 +134,13 @@
 .mongo {
     width: 60%;
     height: 50%;
+}
+
+.projects {
+    background-image: url('../assets/subtle_background-pattern.jpg');
+}
+
+.laptop {
+    width: 75%;
+    height: auto;
 }
