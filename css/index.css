@@ -86,46 +86,6 @@
     margin: 0 15px;
 }
 
-.education {
-    background: linear-gradient(rgb(15, 14, 14), rgb(73, 70, 70), lightgray);
-    padding-top: 50px;
-    height: 400px;
-}
-
-.education-cards {
-    margin: 0 auto;
-    height: 200px;
-    display: flex;
-    justify-content: space-between;
-    padding: 50px 40px;
-}
-
-.edu-bullets {
-    color: black;
-    font-size: 2.5rem;
-    margin-right: 10px;
-}
-
-.edu-info {
-    font-size: 1.6rem;
-    width: 40%;
-    height: 150%;
-    border: 6px solid rgb(174, 177, 9);
-    padding: 20px 40px 0px;
-    background-color: lightgrey;
-}
-
-.school {
-    font-size: 2rem;
-    font-weight: bold;
-}
-
-.degree {
-    font-size: 1.4rem;
-    font-style: italic;
-    margin-left: 60px;
-}
-
 .top-charts {
     margin: 4rem;
     justify-content: center;
@@ -136,24 +96,41 @@
     justify-content: center;
 }
 
-.skills {
-    margin-left: 6rem;
+.box {
+    height: 280px;
 }
 
-.skills-icons-top {
-  margin-top: 5rem;
-  margin-left: 2rem;
-  justify-content: space-around;
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.skills-icons-bottom {
-    justify-content: space-around;
-    margin-left: 16rem;
-    margin-top: 2rem;
+.gray-box {
+    height: 280px;
+    background-color: rgb(235, 230, 222);
 }
 
-.sk-icon {
-    width: 16%;
-    height: 70%;
+.js {
+    width: 45%;
+    height: 60%;
 }
 
+.html {
+    width: 45%;
+    height: 60%;
+}
+
+.css {
+  height: 72%;
+}
+
+.react {
+    width: 45%;
+    height: 60%;
+}
+
+.mongo {
+    width: 60%;
+    height: 50%;
+}
