@@ -87,7 +87,7 @@
     margin: 0 15px;
 }
 
-.top-charts {
+/* .top-charts {
     margin: 4rem;
     justify-content: center;
 }
@@ -95,7 +95,8 @@
 .bottom-charts {
     margin: 4rem;
     justify-content: center;
-}
+} */
+
 
 .box {
     height: 280px;
@@ -113,27 +114,32 @@
 }
 
 .js {
-    width: 45%;
+    max-width: 45%;
     height: 60%;
 }
 
 .html {
-    width: 45%;
+    max-width: 45%;
     height: 60%;
 }
 
 .css {
+  max-width: 55%;
   height: 72%;
 }
 
 .react {
-    width: 45%;
+    max-width: 45%;
     height: 60%;
 }
 
 .mongo {
-    width: 60%;
+    max-width: 60%;
     height: 50%;
+}
+
+.node {
+    max-width: 65%;
 }
 
 .projects {
@@ -141,6 +147,31 @@
 }
 
 .laptop {
-    width: 75%;
-    height: auto;
+    /* width: 75%; */
+    width: 25%; 
+    height: 85%; 
+    margin-top: 20px;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.project-container {
+    background-image: url('../assets/subtle_background-pattern.jpg');
+}
+
+.project-info {
+    width: 60%;
+    margin: 30px 0px 0px 20px;
+}
+
+.project {
+    display: flex;
+    justify-content: space-between;
+    height: 240px;
+    border: 1px solid lightgray;
+    margin: 20px auto;
+    box-shadow: 5px 3px 5px 5px rgb(153, 151, 151);
+    background-color: white;
 }
